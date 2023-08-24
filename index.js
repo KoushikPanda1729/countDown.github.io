@@ -22,7 +22,6 @@ const countDownClock = (endDate) => {
     if (seconds == 0) {
         inputAssign[3].value = "Done✅";
     }
-    console.log(seconds);
 }
 
 
