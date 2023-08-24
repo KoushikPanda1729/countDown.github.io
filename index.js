@@ -15,6 +15,7 @@ const countDownClock = (endDate) => {
     const hour = Math.floor(((difference / 3600) % 24));
     const minutes = Math.floor(((difference % 3600) / 60));
     const seconds = Math.floor(((difference % 3600) % 60));
+    if (seconds < 0) return;
     inputAssign[0].value = days;
     inputAssign[1].value = hour;
     inputAssign[2].value = minutes;
@@ -22,7 +23,7 @@ const countDownClock = (endDate) => {
     if (seconds == 0 && minutes==0 && hour==0 && days==0) {
         inputAssign[3].value = "Done✅";
     }
-    if (seconds < 0) return;
+    
 }
 
 
