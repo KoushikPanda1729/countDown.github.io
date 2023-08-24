@@ -19,7 +19,7 @@ const countDownClock = (endDate) => {
     inputAssign[1].value = hour;
     inputAssign[2].value = minutes;
     inputAssign[3].value = seconds;
-    if (seconds == 0 && endDate==0 ) {
+    if (seconds == 0 && minutes==0 && hour==0 && days==0) {
         inputAssign[3].value = "Done✅";
     }
     if (seconds < 0) return;
